@@ -1,10 +1,11 @@
+import Hero from "../components/hero/hero";
+import Hero2 from "../components/hero/hero2";
+
 export default function HomePage() {
   return (
-    <main>
-      <section>
-        <h1>Hlas Moravy</h1>
-        <p>Moderní projekt pro budoucnost našeho kraje.</p>
-      </section>
-    </main>
+    <>
+      <Hero />
+      <Hero2 />
+    </>
   );
 }

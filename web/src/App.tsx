@@ -10,13 +10,15 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/program" element={<ProgramPage />} />
-        <Route path="/kandidati" element={<KandidatPage />} />
-        <Route path="/kontakt" element={<KontaktPage />} />
-        <Route path="/onas" element={<ONasPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/program" element={<ProgramPage />} />
+          <Route path="/kandidati" element={<KandidatPage />} />
+          <Route path="/kontakt" element={<KontaktPage />} />
+          <Route path="/onas" element={<ONasPage />} />
+        </Routes>
+      </main>
     </>
   );
 }

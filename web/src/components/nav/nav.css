@@ -1,12 +1,13 @@
 /* ===== NAVBAR ===== */
 
 .navbar {
-  position: relative;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   background: var(--brand-orange);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
   height: 10vh;
   max-height: 8rem;
   margin-top: 1rem;
