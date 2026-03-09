@@ -2,6 +2,8 @@ import ProgramItem from "./programItem";
 import './programSection.css';
 // @ts-ignore
 import orange from "../../assets/orange.svg";
+// @ts-ignore
+import tyrkys from "../../assets/tyrkys.svg";
 const programData = [
   {
     title: "Školství a pracovní příležitosti",
@@ -28,13 +30,19 @@ const programData = [
 export default function ProgramSection() {
   return (
     <section className="program">
+        <img className="program-background2" src={tyrkys} alt="" />
         <img className="program-background" src={orange} alt="" />
+        
         <div className="placeholder-navbar"></div>
       <div className="container">
-
+        <div className="program-header">
+          <h2 className="programsection-heading">Náš program</h2>
+          <a href="/program-hlas-moravy.pdf" className="button-primary program-download-button" download>Stáhnout program v PDF</a>
+        </div>
         <div className="program-grid">
           {programData.map((item) => (
             <ProgramItem
+              key={item.title}
               title={item.title}
               text={item.text}
             />

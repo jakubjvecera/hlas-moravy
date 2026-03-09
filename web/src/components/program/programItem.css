@@ -7,9 +7,9 @@
 .program-item {
   background: #ffffff;
   border-radius: var(--border-radius);
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
   z-index: 100;
 }
 .program-title {
