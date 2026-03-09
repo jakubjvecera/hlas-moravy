@@ -10,10 +10,12 @@
   backdrop-filter: blur(12px);
   height: 10vh;
   max-height: 8rem;
+  min-height: 3rem;
   margin-top: 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
   border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-inner {
@@ -23,20 +25,22 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  position: relative;
 }
 
 .navbar-logo {
   display: flex;
   align-items: center;
   height: 100%;
+  z-index: 1002;
 }
 
 .navbar-logo-image {
   height: 100%;
+  width: auto;
 }
-.navbar-logo-text {
-  white-space: nowrap;
-}
+
+
 
 .navbar-nav {
   display: flex;
@@ -50,6 +54,7 @@
   font-weight: 600;
   color: var(--text-dark);
   transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -75,22 +80,68 @@
   margin-left: 0.5rem;
 }
 
+/* ===== HAMBURGER ===== */
+
+.navbar-toggle {
+  display: none;
+  width: 52px;
+  height: 52px;
+  border: none;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 1002;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.navbar-toggle:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: var(--text-dark);
+  border-radius: 999px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.navbar-toggle.is-open span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.navbar-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.is-open span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 860px) {
-  .navbar-inner {
-    min-height: 72px;
-    gap: 1rem;
+@media (max-width: 1100px) {
+  .navbar {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+    .navbar-logo-image {
+    max-height: 64px;
   }
 
-  .navbar-logo-text {
-    font-size: 0.95rem;
+  .navbar-inner {
+    gap: 1rem;
   }
 
   .navbar-nav {
     gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
   }
 
   .nav-link {
@@ -102,22 +153,98 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 860px) {
+  .navbar {
+    height: auto;
+    min-height: 78px;
+  }
+
+
   .navbar-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 0.9rem;
-    padding-bottom: 0.9rem;
+    min-height: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .navbar-toggle {
+    display: inline-flex;
   }
 
   .navbar-nav {
-    width: 100%;
-    justify-content: flex-start;
-    gap: 0.9rem 1.1rem;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+  .navbar-nav.navbar-nav-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    padding: 0.85rem 1rem;
+    border-radius: 0.9rem;
+    color: var(--text-dark);
+    background: transparent;
+  }
+
+  .nav-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-dark);
+  }
+
+  .nav-link-active {
+    background: rgba(0, 0, 0, 0.06);
+    color: var(--text-dark);
   }
 
   .nav-link-active::after {
-    bottom: -0.25rem;
+    display: none;
+  }
+
+  .navbar-cta {
+    margin-left: 0;
+    margin-top: 0.25rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .navbar-inner {
+    min-height: 72px;
+  }
+
+
+  .navbar-nav {
+    top: calc(100% + 0.55rem);
+    padding: 0.85rem;
   }
 }

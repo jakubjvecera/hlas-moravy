@@ -1,0 +1,24 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--brand-purple);
+  z-index: 1;
+  
+}
+.placeholder-navbar {
+  height: calc(10vh + 2rem);
+  max-height: calc(8rem + 2rem);
+}
+.program-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.program-grid {
+  position: relative;
+  z-index: 100;
+}

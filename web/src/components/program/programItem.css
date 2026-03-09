@@ -1,3 +1,22 @@
 .program-text {
   white-space: pre-line;
+  color:var(--brand-purple);
+  margin-top: 0.5rem;
+}
+
+.program-item {
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  margin-top: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+.program-title {
+  background-color: var(--brand-purple);
+  padding: 0.7rem;
+  border-radius: var(--border-radius);
+  color: white;
+  font-weight: bold;
+  width: auto;
 }

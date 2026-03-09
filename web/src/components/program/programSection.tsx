@@ -1,5 +1,7 @@
 import ProgramItem from "./programItem";
-
+import './programSection.css';
+// @ts-ignore
+import orange from "../../assets/orange.svg";
 const programData = [
   {
     title: "Školství a pracovní příležitosti",
@@ -26,8 +28,9 @@ const programData = [
 export default function ProgramSection() {
   return (
     <section className="program">
+        <img className="program-background" src={orange} alt="" />
+        <div className="placeholder-navbar"></div>
       <div className="container">
-        <h2 className="program-heading">Náš program</h2>
 
         <div className="program-grid">
           {programData.map((item) => (
