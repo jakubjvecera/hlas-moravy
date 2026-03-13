@@ -3,7 +3,7 @@ import "./soc.css";
 
 export default function Soc() {
   return (
-    <div className="soc-links">
+    <div className="soc-links no-select">
       <a href="mailto:info@hlas-moravy.cz" aria-label="Email">
         <Mail size="2rem" />
       </a>

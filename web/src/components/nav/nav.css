@@ -75,6 +75,10 @@
   border-radius: 999px;
 }
 
+.nav-link-active:hover {
+  color: white;
+  background: transparent;
+}
 .navbar-cta {
   margin-left: 0.5rem;
 }

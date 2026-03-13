@@ -1,0 +1,28 @@
+.instagram-section{
+    padding-top:2rem;
+}
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.instagram-media {
+  width: 100% !important;
+  min-width: 0 !important;
+  border-radius: var(--border-radius) !important;
+}
+@media (max-width: 900px) {
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+}@media (min-width: 1921px) {
+  .instagram-wrapper {
+    transform: scale(2);
+
+  }
+  .instagram-section{
+    padding-top: 8rem;
+padding-bottom: 4rem;
+  }
+}

@@ -30,12 +30,12 @@ const programData = [
 export default function ProgramSection() {
   return (
     <section className="program">
-        <img className="program-background2" src={tyrkys} alt="" />
-        <img className="program-background" src={orange} alt="" />
+        <img className="program-background2 no-select" src={tyrkys} alt="" />
+        <img className="program-background no-select" src={orange} alt="" />
         
-        <div className="placeholder-navbar"></div>
+        <div className="placeholder-navbar no-select"></div>
       <div className="container">
-        <div className="program-header">
+        <div className="program-header no-select">
           <h2 className="programsection-heading">Náš program</h2>
           <a href="/program-hlas-moravy.pdf" className="button-primary program-download-button" download>Stáhnout program v PDF</a>
         </div>

@@ -8,6 +8,7 @@
     position: relative;
     overflow: hidden; /* Zabrání obsahu, aby přetékal přes zaoblené rohy */
     cursor: pointer; /* Změní kurzor na ukazovátko při najetí */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 .kandidat-img {
     width: 100%;

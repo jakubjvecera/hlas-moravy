@@ -4,7 +4,7 @@ import Kandidat from "../../kandidat/kandidat";
 export default function Onas() {
   return (
     <section className="onas">
-        <div className="placeholder-navbar"></div>
+        <div className="placeholder-navbar no-select"></div>
       <div className="container">
         <div className="onas-kandidati">¨
             <Kandidat name="Jan Valoušek" text="Jsem Jan Valoušek, pocházím z Miroslavi a právě studuji na Gymnáziu Brno-Řečkovice. Zároveň jsem předsedou strany Hlas Moravy. Ve volném čase dělám judo a plavání. Chci se zaměřit zejména na pracovní a studijní možností mladých v našem kraji." source="IMG_20260308_151719238.png" description="kandidát na hejtmana" />           
@@ -15,9 +15,10 @@ export default function Onas() {
         <div className="onas-content">
            <div> Naše hnutí se skládá z lidí s vizí, jak zlepšit náš kraj a jak ho posunout dopředu. Zaměříme se na naši budoucnost. Vytvoříme vhodné prostředí pro rozvoj lokálních i nadnárodních firem, zkvalitníme studium a přístup k praxi na krajských školách, podpoříme mladé rodiny v bytové krizi. To vše, abychom udrželi šikovné a vzdělané moraváky v kraji.
           </div>
-          <Link to="/program" className="button-primary navbar-cta onas-btn">
+          <Link to="/program" className="button-primary navbar-cta onas-btn no-select">
             Náš program
           </Link>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8j7on0lJkfFBuShqG5gC19HDlj455W1isU9tRKV85HXmmIg/viewform" className="button-primary navbar-cta onas-btn no-select" >Staňte se dobrovolníkem</a>
           </div>
 
       </div>

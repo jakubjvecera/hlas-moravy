@@ -51,10 +51,16 @@ img {
   padding: 0 1.5rem;
 }
 
+.no-select {
+  -webkit-user-select: none; /* Chrome / Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* starší Edge */
+  user-select: none;         /* standard */
+}
 /* ===== BRAND COLORS ===== */
 
 :root {
-  --brand-orange: #ff6a00;
+  --brand-orange: #fb5c0b;
   --brand-purple: #492082ff;
   --brand-turquoise: #00b3a6;
   --text-dark: #111;

@@ -12,9 +12,9 @@ type ProgramItemProps = {
 export default function Kandidat({ name, text, description, source }: ProgramItemProps) {
   return (
     <div className="kandidat">
-      <img className='kandidat-img' src={source} alt={name} />
-      <h2 className="kandidat-name">{name}</h2>
-      <p className="kandidat-description">{description}<ArrowRight className='sipka' /></p>
+      <img className='kandidat-img no-select' src={source} alt={name} />
+      <h2 className="kandidat-name no-select">{name}</h2>
+      <p className="kandidat-description no-select">{description}<ArrowRight className='sipka' /></p>
       <div className="kandidat-hover">
         <p className="kandidat-description">{description}</p>
         <p className="kandidat-text">{text}</p>

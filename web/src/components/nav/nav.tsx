@@ -13,7 +13,7 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="navbar">
+    <header className="navbar no-select">
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Hlas Moravy logo" className="navbar-logo-image" />
@@ -35,6 +35,10 @@ export default function Navbar() {
           <NavLink to="/onas" className={navLinkClass} onClick={closeMenu}>
             O nás
           </NavLink>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9YyJVs1kbqKY8Ql58cgCUwP0TClG1w0sUtz7qxPZrIpOyrA/viewform" className="nav-link" onClick={closeMenu}>
+            Chci být v obraze
+          </a>
 
           <Link to="/program" className="button-primary navbar-cta" onClick={closeMenu}>
             Náš program
