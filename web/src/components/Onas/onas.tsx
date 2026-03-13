@@ -18,7 +18,7 @@ export default function Onas() {
           <Link to="/program" className="button-primary navbar-cta onas-btn no-select">
             Náš program
           </Link>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8j7on0lJkfFBuShqG5gC19HDlj455W1isU9tRKV85HXmmIg/viewform" className="button-primary navbar-cta onas-btn no-select" >Staňte se dobrovolníkem</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8j7on0lJkfFBuShqG5gC19HDlj455W1isU9tRKV85HXmmIg/viewform" className="button-primary navbar-cta onas-btn no-select" target="_blank" rel="noopener noreferrer">Staňte se dobrovolníkem</a>
           </div>
 
       </div>

@@ -36,7 +36,7 @@ export default function Navbar() {
             O nás
           </NavLink>
 
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9YyJVs1kbqKY8Ql58cgCUwP0TClG1w0sUtz7qxPZrIpOyrA/viewform" className="nav-link" onClick={closeMenu}>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9YyJVs1kbqKY8Ql58cgCUwP0TClG1w0sUtz7qxPZrIpOyrA/viewform" className="nav-link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
             Chci být v obraze
           </a>
 
