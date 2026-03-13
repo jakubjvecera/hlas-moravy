@@ -1,0 +1,23 @@
+.onas{
+    background-color: var(--brand-purple);
+    padding-bottom: 2rem;
+}
+.onas-content {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--brand-purple);
+    background-color: var(--brand-orange);
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.onas-kandidati {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.onas-btn{
+    margin-top: 1rem;
+}

@@ -36,14 +36,6 @@ export default function Navbar() {
             O nás
           </NavLink>
 
-          <NavLink to="/kandidati" className={navLinkClass} onClick={closeMenu}>
-            Kandidáti
-          </NavLink>
-
-          <NavLink to="/kontakt" className={navLinkClass} onClick={closeMenu}>
-            Kontakt
-          </NavLink>
-
           <Link to="/program" className="button-primary navbar-cta" onClick={closeMenu}>
             Náš program
           </Link>

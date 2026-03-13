@@ -57,11 +57,11 @@
 }
 
 .nav-link:hover {
-  color: var(--brand-orange);
+  color: var(--brand-purple);
 }
 
 .nav-link-active {
-  color: var(--brand-orange);
+  color: white;
 }
 
 .nav-link-active::after {
