@@ -6,31 +6,32 @@
     padding-bottom: 4rem;
     border-radius: var(--border-radius);
     position: relative;
-    overflow: hidden; /* Zabrání obsahu, aby přetékal přes zaoblené rohy */
-    cursor: pointer; /* Změní kurzor na ukazovátko při najetí */
+    overflow: hidden;
+    cursor: pointer;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
+
 .kandidat-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Zajistí, že obrázek vyplní celý prostor bez deformace */
+    object-fit: cover;
     background-color: var(--brand-purple);
     border-radius: var(--border-radius);
 }
+
 .kandidat-description,
 .kandidat-name {
-    /* Přidá plynulý přechod pro mizení */
     transition: opacity 0.3s ease-in-out;
 }
+
 .kandidat-name {
     bottom: 2rem;
     left: 1rem;
     position: absolute;
-    text-align: left;
-    color: var(--brand-purple);
-    position: absolute;
     text-align: center;
+    color: var(--brand-purple);
 }
+
 .kandidat-description {
     bottom: 0.7rem;
     right: 1rem;
@@ -38,10 +39,10 @@
     text-align: right;
     color: var(--brand-purple);
 }
-.sipka
-{
-    position:relative;
-    top:0.3rem;
+
+.sipka {
+    position: relative;
+    top: 0.3rem;
     color: var(--brand-purple);
 }
 
@@ -51,9 +52,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(45, 33, 86, 0.85); /* Tmavší fialový překryv s průhledností */
+    background-color: rgba(45, 33, 86, 0.85);
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
@@ -63,6 +65,7 @@
     text-align: center;
 }
 
+/* desktop hover */
 .kandidat:hover .kandidat-hover {
     opacity: 1;
     visibility: visible;
@@ -70,5 +73,16 @@
 
 .kandidat:hover .kandidat-description,
 .kandidat:hover .kandidat-name {
+    opacity: 0;
+}
+
+/* mobil klik */
+.kandidat.active .kandidat-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.kandidat.active .kandidat-description,
+.kandidat.active .kandidat-name {
     opacity: 0;
 }
