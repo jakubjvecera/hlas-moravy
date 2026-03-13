@@ -1,0 +1,28 @@
+.nf-color {
+    background-color: var(--brand-purple);
+    height: auto;
+}
+.nf-content {
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--brand-orange);
+}
+.nf-btn {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nf-image {
+    width: 100%;
+    max-width: 40rem;
+    margin-bottom: 1rem;
+}
+.nf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}

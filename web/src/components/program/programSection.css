@@ -7,10 +7,6 @@
   z-index: 1;
   
 }
-.placeholder-navbar {
-  height: calc(10vh + 2rem);
-  max-height: calc(8rem + 2rem);
-}
 .program-background {
   position: absolute;
   bottom: 0;

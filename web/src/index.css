@@ -44,7 +44,10 @@ img {
 }
 
 /* ===== CONTAINER ===== */
-
+.placeholder-navbar {
+  height: calc(10vh + 2rem);
+  max-height: calc(8rem + 2rem);
+}
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -61,10 +64,9 @@ img {
 
 :root {
   --brand-orange: #fb5c0b;
-  --brand-purple: #492082ff;
+  --brand-purple: #492082;
   --brand-turquoise: #00b3a6;
   --text-dark: #111;
-  --text-light: #666;
   --border-radius: 10px;
   --container-width: 60rem;
 }
